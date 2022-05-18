@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/jabbar-dev/CaptainClimate/issues"
   },
-  "homepage": "https://github.com/jabbar-dev/CaptainClimate#readme"
+  "homepage": "https://github.com/jabbar-dev/CaptainClimate#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
