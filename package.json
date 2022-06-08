@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/jabbar-dev/CaptainClimate#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
   }
 }
+

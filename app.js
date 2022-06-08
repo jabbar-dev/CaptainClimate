@@ -5,7 +5,7 @@ const app = express();
 app.use((req,res,next)=>{
 
     res.status(200).json({
-        message:'app is running'
+        message:'app is running on Port 3000'
     })
 
 })
