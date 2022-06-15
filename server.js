@@ -36,4 +36,4 @@ app.use('/hi',(req,res,next)=>{
     })
 })
 
-server.listen({PORT}, console.log("Server is In the Air"));
+server.listen(PORT, console.log("Server is In the Air"));
