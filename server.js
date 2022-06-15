@@ -5,6 +5,11 @@ const http = require('http')
 const server = http.createServer(app);
 require('dotenv').config();
 
+//MiddleWare
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+
+
 //Connect to MongoDB ATLAS
 mongoose.connect(process.env.MONGO_URL,
 {useNewUrlParser:true}
