@@ -7,6 +7,7 @@ const server = http.createServer(app);
 require('dotenv').config();
 const captainRoute = require('./routes/captains')
 
+const PORT = process.env.PORT || 3000;
 
 //MiddleWare
 app.use(express.json());
@@ -35,4 +36,4 @@ app.use('/hi',(req,res,next)=>{
     })
 })
 
-server.listen(3000, console.log("Server is In the Air"));
+server.listen({PORT}, console.log("Server is In the Air"));
