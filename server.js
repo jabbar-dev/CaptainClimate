@@ -1,9 +1,12 @@
-const app = require('./app')
+
 const express = require("express");
+const app = express();
 const mongoose = require("mongoose");
 const http = require('http')
 const server = http.createServer(app);
 require('dotenv').config();
+const captainRoute = require('./routes/captains')
+
 
 //MiddleWare
 app.use(express.json());
@@ -22,5 +25,14 @@ mongoose.connect(process.env.MONGO_URL,
 
 })
 
+
+//Routes
+app.use('/api/captains',captainRoute);
+app.use('/hi',(req,res,next)=>{
+
+    res.status(200).json({
+        message:'app is running on Port 3000'
+    })
+})
 
 server.listen(3000, console.log("Server is In the Air"));

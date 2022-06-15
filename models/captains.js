@@ -28,7 +28,7 @@ const CaptainSchema = new mongoose.Schema({
  },
 
  completedTasks:{
-     type:Integer,
+     type:Number,
      required:false,
      minlength:0,
      maxlength:50

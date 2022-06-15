@@ -6,12 +6,12 @@ const mongoose = require('mongoose')
 const StoriesSchema = new mongoose.Schema({
 
     id:{
-        type:Integer,
+        type:Number,
         required:false,
         maxlength:50,
         minlength:0
     },
-    
+
     name:{
         type:String,
         required:true,
