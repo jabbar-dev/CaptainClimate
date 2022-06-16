@@ -1,24 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginBTN"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login">
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:background="@color/purple_500"
+    >
 
-    <com.google.android.material.appbar.AppBarLayout
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="221dp"
+        android:layout_height="270dp"
+        app:srcCompat="@drawable/whitelogo" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFEB3B"
+        android:ems="10"
+        android:fontFamily="@font/gothic_a1"
+        android:hint="USERNAME"
+        android:inputType="textPersonName"
+        android:shadowColor="#EDE2E2"
+        android:textColor="#F6F4F4"
+        android:textColorHint="#FAF8F8" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="36dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFEB3B"
+        android:ems="10"
+        android:fontFamily="@font/gothic_a1"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="26dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EFEFEF"
+        android:fontFamily="@font/gothic_a1_bold"
+        android:text="Login"
+        android:textColor="#2196F3" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="17dp" />
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.CaptainClimate.AppBarOverlay">
+        android:layout_gravity="center"
+        android:fontFamily="@font/gothic_a1_bold"
+        android:gravity="center"
+        android:text="or Register Now"
+        android:textColor="#FFEB3B" />
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.CaptainClimate.PopupOverlay" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="234dp"
+        android:layout_height="322dp"
+        android:layout_gravity="bottom|right"
+        android:foregroundGravity="bottom|right"
+        app:srcCompat="@drawable/round" />
 
-    </com.google.android.material.appbar.AppBarLayout>
-
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>
