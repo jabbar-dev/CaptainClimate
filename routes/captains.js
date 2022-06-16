@@ -11,7 +11,9 @@ router.post('/',(req,res)=>{
         username:req.body.username,
         name:req.body.name,
         password:req.body.password,
-        completedTasks:req.body.tasks
+        completedTasks:req.body.tasks,
+        institution:req.body.institution,
+        age:req.body.age
     })
 
     captain.save().then(captain =>{

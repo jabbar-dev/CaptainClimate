@@ -32,6 +32,20 @@ const CaptainSchema = new mongoose.Schema({
      required:false,
      minlength:0,
      maxlength:50
+ },
+
+ institution:{
+   type: String,
+   required:false,
+   minlength:0,
+   maxlength:100
+ },
+
+ age:{
+   type:Number,
+   required:false,
+   minlenght:0,
+   maxlength:50
  }
 
 

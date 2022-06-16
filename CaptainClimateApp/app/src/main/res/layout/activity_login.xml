@@ -74,6 +74,7 @@
         android:layout_gravity="center"
         android:fontFamily="@font/gothic_a1_bold"
         android:gravity="center"
+        android:onClick="registerClick"
         android:text="Don't Have An Account? Register Now"
         android:textColor="#FFEB3B" />
 
