@@ -72,8 +72,9 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.makeText(LoginActivity.this, "Logged In", Toast.LENGTH_SHORT).show();
                            // Log.d(TAG, "onResponse: "+"Validated");
 
-
-
+                            Intent intent = new Intent(LoginActivity.this, Splash1.class);
+                            startActivity(intent);
+                            LoginActivity.this.finish();
                             break;
 
                         }

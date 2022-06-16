@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_jabbar_level_one.xml" value="0.20380434782608695" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.16893115942028986" />
+        <entry key="app/src/main/res/layout/activity_splash1.xml" value="0.17777777777777778" />
+        <entry key="app/src/main/res/layout/activity_splash2.xml" value="0.1" />
         <entry key="app/src/main/res/layout/content_login.xml" value="0.20199275362318841" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.20199275362318841" />
       </map>

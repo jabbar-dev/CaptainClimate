@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CaptainClimate">
         <activity
+            android:name=".JabbarLevelOne"
+            android:exported="false" />
+        <activity
+            android:name=".Splash2"
+            android:exported="false" />
+        <activity
+            android:name=".Splash1"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
