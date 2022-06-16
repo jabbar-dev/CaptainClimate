@@ -27,7 +27,7 @@ router.post('/',(req,res)=>{
 router.get('/',(req,res)=>{
 
     Captain.find()
-    .then((books)=>res.send(books))
+    .then((captain)=>res.send({captains: captain}))
     .catch((error)=>{
         res.status(500).send("Cannot Get");
     });
@@ -37,7 +37,7 @@ router.get('/',(req,res)=>{
 router.get("/:capId",(req, res)=>{
 
     Captain.findById(req.params.capId).then(captain=>{
-        if(captain) res.send(captain);
+        if(captain) res.send({captains: captain});
         res.status(404).json.send("Captain Not Found")
     })
     .catch((error)=>{
