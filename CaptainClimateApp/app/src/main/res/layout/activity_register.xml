@@ -25,7 +25,7 @@
         android:layout_weight="1" />
 
     <EditText
-        android:id="@+id/txtID"
+        android:id="@+id/txtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
@@ -73,6 +73,7 @@
         android:inputType="textPassword" />
 
     <EditText
+        android:id="@+id/txtRePass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
@@ -115,5 +116,18 @@
         android:layout_weight="1"
         android:onClick="ClickSignUp"
         android:text="Sign Up" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="goBackClick"
+        android:text="Go Back to Log In"
+        android:textColor="#0078BF"
+        android:textSize="20sp" />
 
 </LinearLayout>
