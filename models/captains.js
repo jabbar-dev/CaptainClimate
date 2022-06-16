@@ -4,6 +4,12 @@ const mongoose = require('mongoose')
 
 const CaptainSchema = new mongoose.Schema({
 
+email:{
+   type:String,
+    required:true,
+    minlength:3,
+    maxlength:50,
+},
 
  username:{
     type:String,

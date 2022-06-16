@@ -8,6 +8,7 @@ router.post('/',(req,res)=>{
 
 
     captain = new Captain({
+        email:req.body.email,
         username:req.body.username,
         name:req.body.name,
         password:req.body.password,

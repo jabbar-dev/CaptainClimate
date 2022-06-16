@@ -25,7 +25,7 @@
         android:layout_weight="1" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress4"
+        android:id="@+id/txtID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
@@ -37,7 +37,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/txtFullName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
@@ -49,7 +49,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/txtUname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
@@ -61,7 +61,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/textSignUpPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
@@ -73,7 +73,6 @@
         android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
@@ -85,7 +84,7 @@
         android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/textInstitute"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
@@ -97,7 +96,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/txtAge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
@@ -114,6 +113,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
         android:layout_weight="1"
+        android:onClick="ClickSignUp"
         android:text="Sign Up" />
 
 </LinearLayout>
