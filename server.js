@@ -7,7 +7,7 @@ const server = http.createServer(app);
 require('dotenv').config();
 const captainRoute = require('./routes/captains')
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3002;
 
 //MiddleWare
 app.use(express.json());

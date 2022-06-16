@@ -29,7 +29,8 @@
         android:inputType="textPersonName"
         android:shadowColor="#EDE2E2"
         android:textColor="#F6F4F4"
-        android:textColorHint="#FAF8F8" />
+        android:textColorHint="#FAF8F8"
+        android:textSize="12sp" />
 
     <Space
         android:layout_width="match_parent"
@@ -45,14 +46,15 @@
         android:hint="PASSWORD"
         android:inputType="textPassword"
         android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF" />
+        android:textColorHint="#FFFFFF"
+        android:textSize="12sp" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="26dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/BTNLogin"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#EFEFEF"
@@ -65,21 +67,13 @@
         android:layout_height="17dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/registerLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fontFamily="@font/gothic_a1_bold"
         android:gravity="center"
-        android:text="or Register Now"
+        android:text="Don't Have An Account? Register Now"
         android:textColor="#FFEB3B" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="234dp"
-        android:layout_height="322dp"
-        android:layout_gravity="bottom|right"
-        android:foregroundGravity="bottom|right"
-        app:srcCompat="@drawable/round" />
 
 </LinearLayout>

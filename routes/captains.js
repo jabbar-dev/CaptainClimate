@@ -23,5 +23,15 @@ router.post('/',(req,res)=>{
     });
 });
 
+//GET ALL CAPTAINS
+router.get('/',(req,res)=>{
 
-module.exports = router
+    Captain.find()
+    .then((books)=>res.send(books))
+    .catch((error)=>{
+        res.status(500).send("Cannot Get");
+    });
+})
+
+
+module.exports = router;
