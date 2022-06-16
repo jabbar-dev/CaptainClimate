@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -26,12 +27,16 @@ public class LoginActivity extends AppCompatActivity {
 
     private static final String TAG = "LOG MSG";
     RequestQueue requestQueue;
+      TextView uname;
+      TextView pass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         getSupportActionBar().hide();
+        uname =  (TextView) findViewById(R.id.txtUsername);
+        pass = (TextView) findViewById(R.id.txtPassword);
     }
 
     public void loginEvent(View view) {
@@ -56,12 +61,19 @@ public class LoginActivity extends AppCompatActivity {
             {
                 try {
                     jsonObject = new JSONObject(response.toString());
-                    Log.d(TAG, "onResponse: "+jsonObject.get("captains"));
                     array = jsonObject.getJSONArray("captains");
-                    Log.d(TAG, "onResponse: "+array.toString());
                     for (int i = 0; i < array.length(); i++) {
                         JSONObject objects = array.getJSONObject(i);
-                        Log.d(TAG, "onResponse: "+objects.toString());
+
+                        if((objects.get("username").equals(uname.getText().toString()))&&
+                        (objects.get("password").equals(pass.getText().toString())))
+                        {
+                            Toast.makeText(LoginActivity.this, "Logged In", Toast.LENGTH_SHORT).show();
+                           // Log.d(TAG, "onResponse: "+"Validated");
+                            break;
+                        }
+
+
                     }
 
                 } catch (JSONException e) {

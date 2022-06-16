@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/whitelogo" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/txtUsername"
         android:layout_width="266dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFEB3B"
@@ -30,14 +30,14 @@
         android:shadowColor="#EDE2E2"
         android:textColor="#F6F4F4"
         android:textColorHint="#FAF8F8"
-        android:textSize="12sp" />
+        android:textSize="14sp" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="36dp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/txtPassword"
         android:layout_width="266dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFEB3B"
@@ -47,7 +47,7 @@
         android:inputType="textPassword"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
-        android:textSize="12sp" />
+        android:textSize="14sp" />
 
     <Space
         android:layout_width="match_parent"
