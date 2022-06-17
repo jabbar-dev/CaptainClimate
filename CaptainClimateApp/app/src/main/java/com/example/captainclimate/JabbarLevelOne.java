@@ -13,6 +13,6 @@ public class JabbarLevelOne extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jabbar_level_one);
         YouTubePlayerView youTubePlayerView = new YouTubePlayerView(this);
-        youTubePlayerView.enterFullScreen();
+//        youTubePlayerView.enterFullScreen();
     }
 }
