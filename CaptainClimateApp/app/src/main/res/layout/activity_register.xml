@@ -34,67 +34,73 @@
         android:layout_weight="1"
         android:ems="10"
         android:hint="Email"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:textSize="12sp" />
 
     <EditText
         android:id="@+id/txtFullName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="70dp"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Full Name"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textSize="12sp" />
 
     <EditText
         android:id="@+id/txtUname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="70dp"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Username"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textSize="12sp" />
 
     <EditText
         android:id="@+id/textSignUpPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="70dp"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textSize="12sp" />
 
     <EditText
         android:id="@+id/txtRePass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="70dp"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Re-Type Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textSize="12sp" />
 
     <EditText
         android:id="@+id/textInstitute"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="70dp"
         android:layout_weight="1"
         android:ems="10"
         android:hint="Insitution"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textSize="12sp" />
 
     <EditText
         android:id="@+id/txtAge"
@@ -105,7 +111,8 @@
         android:layout_weight="1"
         android:ems="10"
         android:hint="Age"
-        android:inputType="number" />
+        android:inputType="number"
+        android:textSize="12sp" />
 
     <Button
         android:id="@+id/button"

@@ -6,17 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Dashboard extends AppCompatActivity {
+public class LevelOneComplete extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
+        setContentView(R.layout.activity_level_one_complete);
     }
 
-    public void clickWater(View view) {
-        Intent intent = new Intent(Dashboard.this, JabbarLevelOne.class);
+    public void goClick(View view) {
+        Intent intent = new Intent(LevelOneComplete.this, JabbarLevelTwo1.class);
         startActivity(intent);
-
     }
 }

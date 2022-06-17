@@ -6,17 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Dashboard extends AppCompatActivity {
+public class Level2Complete extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
+        setContentView(R.layout.activity_level2_complete);
     }
 
-    public void clickWater(View view) {
-        Intent intent = new Intent(Dashboard.this, JabbarLevelOne.class);
+    public void Logout(View view) {
+        Intent intent = new Intent(Level2Complete.this, LoginActivity.class);
         startActivity(intent);
-
+        this.finish();
     }
 }

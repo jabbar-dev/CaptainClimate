@@ -83,7 +83,10 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 error.printStackTrace();
+                Toast.makeText(RegisterActivity.this, "Not Registered please check Entries", Toast.LENGTH_SHORT).show();
+
             }
+
         });
 
         requestQueue.add(jsonObjectRequest);

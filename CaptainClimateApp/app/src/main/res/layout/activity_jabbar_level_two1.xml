@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".JabbarLevelOne">
+    tools:context=".JabbarLevelTwo1">
 
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFEB3B"
-        android:text="Water Waste Level 1"
+        android:text="Water Waste Level 2"
         android:textAlignment="center"
         android:textColor="#2196F3"
         android:textSize="25sp" />
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
 
         app:autoPlay="true"
-        app:videoId="ZklDyOjbIY0">
+        app:videoId="sreX09P9d5g">
 
     </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
 
@@ -33,7 +33,7 @@
         android:id="@+id/lvl1BTN"
         android:layout_width="166dp"
         android:layout_height="wrap_content"
-        android:onClick="lvlOneBTN"
+        android:onClick="lvlTwoBTN"
         android:text="Next Scene" />
 
     <TextView
@@ -43,5 +43,4 @@
         android:layout_marginTop="10dp"
         android:text="Please Wait While the Video Loads."
         android:textAlignment="center" />
-
 </LinearLayout>

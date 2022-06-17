@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CaptainClimate">
         <activity
+            android:name=".Level2Complete"
+            android:exported="false" />
+        <activity
+            android:name=".JabbarLevelTwo2"
+            android:exported="false" />
+        <activity
+            android:name=".JabbarLevelTwo1"
+            android:exported="false" />
+        <activity
+            android:name=".LevelOneComplete"
+            android:exported="false" />
+        <activity
+            android:name=".JabbarLevel2"
+            android:exported="false" />
+        <activity
             android:name=".Dashboard"
             android:exported="false" />
         <activity

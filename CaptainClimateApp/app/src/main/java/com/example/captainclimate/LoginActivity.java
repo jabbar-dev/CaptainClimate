@@ -84,6 +84,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 } catch (JSONException e) {
                     e.printStackTrace();
+                    Toast.makeText(LoginActivity.this, "Incorrect Details", Toast.LENGTH_SHORT).show();
+
                 }
 //                Log.d(TAG, "onResponse: " + response.toString());
 //                 data[0] = response.toString();
@@ -92,6 +94,8 @@ public class LoginActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public synchronized void onErrorResponse(VolleyError error) {
+                Toast.makeText(LoginActivity.this, "Not Connected", Toast.LENGTH_SHORT).show();
+
             }
         });
 
