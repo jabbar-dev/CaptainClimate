@@ -6,6 +6,10 @@ const http = require('http')
 const server = http.createServer(app);
 require('dotenv').config();
 const captainRoute = require('./routes/captains')
+// //cors
+// const cors = require('cors');
+// //use cors
+// app.use(cors());
 
 const PORT = process.env.PORT || 3002;
 

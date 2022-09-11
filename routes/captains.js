@@ -28,7 +28,7 @@ router.post('/',(req,res)=>{
 
 //GET ALL CAPTAINS
 router.get('/',(req,res)=>{
-
+    //get api
     Captain.find()
     .then((captain)=>res.send({captains: captain}))
     .catch((error)=>{
